@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Card</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="card w-95" style="margin: 50px;height: 40rem;background-color: whitesmoke;">
+        <div class="card text-center" style="margin: 70px;">
+            <div class="card-header">
+              SELLER MEMBERSHIP
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Pay 1000 To Proceed For The Registration Process</p>
+              <a onclick="validate();" class="btn btn-primary">Pay 1000</a>
+            </div>
+            <div class="card-footer text-success">
+              Enjoy Our Service
+            </div>
+          </div>
+    </div>
+    <script>
+        function validate() {
+            let vsr = "If you wish to pay 1000 press ok, otherwise\npress cancel";
+            if (confirm(vsr) == true) {
+                window.location.replace("./SellerSignUp.php");
+            }
+        }
+    </script>
+</body>
+</html>

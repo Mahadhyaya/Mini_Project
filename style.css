@@ -1,0 +1,14 @@
+.container {
+    width: 80%;
+}
+
+.mid {
+    display: grid;  
+}
+button {
+    margin: auto;  
+}
+
+label {
+    margin-left:18px;
+}
